@@ -17,7 +17,7 @@ export const portfolioData = {
     },
     bio: "Second-year B.Tech IT student at ITM Gwalior and enthusiastic full-stack developer skilled in React.js, Node.js, Express.js, MongoDB, REST APIs, JWT authentication, and responsive UI development. Built and deployed multiple web applications using React, Tailwind CSS, Vercel, and Render. Seeking a frontend/full-stack internship to contribute to real-world products and strengthen production-level development skills."
   },
-  
+
   stats: [
     { label: "DSA Problems Solved", value: "200+" },
     { label: "HackerRank Problem Solving", value: "5-Star" },
@@ -43,7 +43,6 @@ export const portfolioData = {
   skills: {
     languages: [
       { name: "JavaScript (ES6+)", level: "Advanced", icon: "FileCode" },
-      { name: "TypeScript", level: "Advanced", icon: "Code2" },
       { name: "Java", level: "Intermediate", icon: "Code2" }
     ],
     frontend: [
@@ -75,7 +74,7 @@ export const portfolioData = {
       title: "ChatGPT Clone (Groq Edition) ⚡",
       description: "High-fidelity, pixel-perfect copy of ChatGPT powered by Groq LPUs for 300 to 800+ tokens/sec streaming, featuring DeepSeek-R1 reasoning, Whisper voice input, Flux.1 image generation & Firebase sync.",
       category: "AI & GenAI",
-      tags: ["Next.js (App Router)", "TypeScript", "Groq LPU", "DeepSeek-R1", "Tailwind CSS", "Firebase Firestore", "KaTeX"],
+      tags: ["Next.js (App Router)", "React", "Groq LPU", "DeepSeek-R1", "Tailwind CSS", "Firebase Firestore", "KaTeX"],
       github: "https://github.com/Shivraj-jaat",
       live: "#",
       image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80",

@@ -52,7 +52,7 @@ const getSmartSimulatedResponse = (query) => {
   
   if (q.includes("project") || q.includes("kaam") || q.includes("work") || q.includes("chatgpt")) {
     return `Maine key standout production projects build kiye hain:
-1. ⚡ **ChatGPT Clone (Groq Edition)**: Next.js (App Router) + TypeScript app powered by Groq LPUs for 300-800+ tokens/sec streaming, DeepSeek-R1 reasoning thought process, Whisper voice chat, free Flux.1 AI image generation & Firebase Firestore sync!
+1. ⚡ **ChatGPT Clone (Groq Edition)**: Next.js (App Router) + React app powered by Groq LPUs for 300-800+ tokens/sec streaming, DeepSeek-R1 reasoning thought process, Whisper voice chat, free Flux.1 AI image generation & Firebase Firestore sync!
 2. 🤖 **AI Interview Prep Platform**: Full-Stack MERN platform jo Google Gemini API ke sath dynamic mock interviews generate aur evaluate karta hai (JWT auth ke sath).
 3. 🚀 **Groq AI Portfolio & Hub**: High-speed portfolio with Aura AI chatbot & real-time Firebase guestbook.
 4. 🎬 **Movie Explorer Website**: React + Tailwind discovery app with TMDB/OMDb API integration!`;
@@ -60,7 +60,7 @@ const getSmartSimulatedResponse = (query) => {
   
   if (q.includes("skill") || q.includes("tech") || q.includes("stack") || q.includes("language")) {
     return `Mera core tech stack focused & robust hai:
-- **Languages**: JavaScript (ES6+), TypeScript, Java
+- **Languages**: JavaScript (ES6+), Java
 - **Frontend**: React.js, Next.js (App Router), Tailwind CSS
 - **Backend & Database**: Node.js & Express, REST APIs & JWT, MongoDB & Mongoose
 - **AI & Cloud**: Groq Cloud LPUs (300-800+ tps), Google Gemini API, Firebase Firestore, Git & Vercel 💻`;
