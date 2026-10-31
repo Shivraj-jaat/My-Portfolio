@@ -42,7 +42,7 @@ GUIDELINES:
 1. Always be polite, professional, and enthusiastic.
 2. If the user asks in Hindi or Hinglish, answer in natural, friendly Hinglish/Hindi. If they ask in English, answer in English.
 3. Keep answers concise, informative, and engaging (2 to 4 sentences usually, unless detailed breakdown is requested).
-4. Emphasize Shivraj's passion for learning, strong DSA fundamentals (200+ solved, 5-Star HackerRank), and practical MERN + AI projects.
+4. Emphasize Shivraj's passion for learning, strong DSA fundamentals (200+ solved, 5-Star HackerRank), and practical Next.js/React + AI projects (such as ChatGPT Clone with Groq & DeepSeek-R1, AI Interview Prep, etc.).
 5. Encourage recruiters to reach out through the Contact form or direct email (${portfolioData.personal.email}) or phone (${portfolioData.personal.phone}) for internship discussions.`;
 };
 
@@ -50,15 +50,20 @@ GUIDELINES:
 const getSmartSimulatedResponse = (query) => {
   const q = query.toLowerCase();
   
-  if (q.includes("project") || q.includes("kaam") || q.includes("work")) {
-    return `Maine 2 key standout projects build kiye hain:
-1. **AI Interview Prep Platform**: Full-Stack MERN platform jo Google Gemini API ke sath dynamic mock interviews generate aur evaluate karta hai (JWT auth ke sath).
-2. **Movie Explorer Website**: React + Tailwind app with TMDB/OMDb API integration aur dynamic movie routing.
-3. **Groq AI Portfolio**: Yeh portfolio jisme fast Groq LPU inference aur Firebase Firestore guestbook integrated hai! 🚀`;
+  if (q.includes("project") || q.includes("kaam") || q.includes("work") || q.includes("chatgpt")) {
+    return `Maine key standout production projects build kiye hain:
+1. ⚡ **ChatGPT Clone (Groq Edition)**: Next.js (App Router) + TypeScript app powered by Groq LPUs for 300-800+ tokens/sec streaming, DeepSeek-R1 reasoning thought process, Whisper voice chat, free Flux.1 AI image generation & Firebase Firestore sync!
+2. 🤖 **AI Interview Prep Platform**: Full-Stack MERN platform jo Google Gemini API ke sath dynamic mock interviews generate aur evaluate karta hai (JWT auth ke sath).
+3. 🚀 **Groq AI Portfolio & Hub**: High-speed portfolio with Aura AI chatbot & real-time Firebase guestbook.
+4. 🎬 **Movie Explorer Website**: React + Tailwind discovery app with TMDB/OMDb API integration!`;
   }
   
   if (q.includes("skill") || q.includes("tech") || q.includes("stack") || q.includes("language")) {
-    return `Mera core tech stack **React.js, Node.js, Express.js, MongoDB (MERN)**, aur **Tailwind CSS** hai. Programming languages mein main **JavaScript** aur **Java** use karta hoon. Iske alawa maine **Gemini API (@google/genai)** aur **Groq API** ke sath GenAI integrations banaye hain! 💻`;
+    return `Mera core tech stack focused & robust hai:
+- **Languages**: JavaScript (ES6+), TypeScript, Java
+- **Frontend**: React.js, Next.js (App Router), Tailwind CSS
+- **Backend & Database**: Node.js & Express, REST APIs & JWT, MongoDB & Mongoose
+- **AI & Cloud**: Groq Cloud LPUs (300-800+ tps), Google Gemini API, Firebase Firestore, Git & Vercel 💻`;
   }
 
   if (q.includes("dsa") || q.includes("leetcode") || q.includes("hackerrank") || q.includes("problem solving")) {
@@ -74,10 +79,10 @@ const getSmartSimulatedResponse = (query) => {
   }
 
   if (q.includes("who are you") || q.includes("about") || q.includes("kaun ho") || q.includes("intro")) {
-    return `Main ${portfolioData.personal.name} ka personal AI assistant hoon, powered by Groq LPU speed! Shivraj ITM Gwalior ke B.Tech IT student hain jo MERN stack, REST APIs aur GenAI tools par hands-on apps banate hain. Aap mujhse unke projects, skills, ya education ke baare mein kuch bhi poochh sakte hain! ✨`;
+    return `Main ${portfolioData.personal.name} ka personal AI assistant hoon, powered by Groq LPU speed! Shivraj ITM Gwalior ke B.Tech IT student hain jo Next.js, React, Node.js aur modern GenAI par high-speed apps banate hain. Aap mujhse unke projects (jaise ChatGPT Clone ya AI Interview Prep), skills, ya education ke baare mein kuch bhi poochh sakte hain! ✨`;
   }
 
-  return `Hey there! Main ${portfolioData.personal.name} ka portfolio assistant hoon. Aap mujhse Shivraj ke projects (AI Interview Prep, Movie Explorer), skills, DSA achievements, ya internship opportunity ke baare mein kuch bhi poochh sakte hain! ⚡`;
+  return `Hey there! Main ${portfolioData.personal.name} ka portfolio assistant hoon. Aap mujhse Shivraj ke standout projects (ChatGPT Clone, AI Interview Prep), skills, DSA achievements, ya internship opportunity ke baare mein poochh sakte hain! ⚡`;
 };
 
 export const getGroqApiKey = () => {

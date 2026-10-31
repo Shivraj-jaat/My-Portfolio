@@ -43,46 +43,56 @@ export const portfolioData = {
   skills: {
     languages: [
       { name: "JavaScript (ES6+)", level: "Advanced", icon: "FileCode" },
+      { name: "TypeScript", level: "Advanced", icon: "Code2" },
       { name: "Java", level: "Intermediate", icon: "Code2" }
     ],
     frontend: [
-      { name: "React.js", level: "Advanced", icon: "Code2" },
-      { name: "Tailwind CSS", level: "Expert", icon: "Palette" },
-      { name: "React Router DOM", level: "Advanced", icon: "Layout" },
-      { name: "HTML5 & CSS3", level: "Expert", icon: "Layout" },
-      { name: "JavaScript", level: "Advanced", icon: "FileCode" }
+      { name: "React.js", level: "Expert", icon: "Code2" },
+      { name: "Next.js (App Router)", level: "Advanced", icon: "Globe" },
+      { name: "Tailwind CSS", level: "Expert", icon: "Palette" }
     ],
     backend: [
-      { name: "Node.js", level: "Advanced", icon: "Server" },
-      { name: "Express.js", level: "Advanced", icon: "Layers" },
-      { name: "REST APIs", level: "Expert", icon: "Network" },
-      { name: "JWT Authentication", level: "Advanced", icon: "Send" },
-      { name: "bcrypt.js & dotenv", level: "Advanced", icon: "Cpu" },
-      { name: "MongoDB & Mongoose", level: "Advanced", icon: "Database" },
-      { name: "MySQL", level: "Intermediate", icon: "HardDrive" }
+      { name: "Node.js & Express", level: "Advanced", icon: "Server" },
+      { name: "REST APIs & JWT", level: "Expert", icon: "Network" },
+      { name: "MongoDB & Mongoose", level: "Advanced", icon: "Database" }
     ],
     aiAndTools: [
-      { name: "Gemini API (@google/genai)", level: "Advanced", icon: "Sparkles" },
-      { name: "Groq Cloud API (LPU)", level: "Advanced", icon: "Zap" },
-      { name: "Git & GitHub", level: "Advanced", icon: "GitBranch" },
-      { name: "Postman & MongoDB Compass", level: "Advanced", icon: "Send" },
-      { name: "VS Code & IntelliJ IDEA", level: "Advanced", icon: "Code2" },
-      { name: "Vercel & Render", level: "Advanced", icon: "Cloud" }
+      { name: "Groq Cloud (LPU 800+ tps)", level: "Expert", icon: "Zap" },
+      { name: "Google Gemini API", level: "Advanced", icon: "Sparkles" },
+      { name: "Firebase Firestore", level: "Advanced", icon: "DatabaseZap" },
+      { name: "Git, GitHub & Vercel", level: "Advanced", icon: "GitBranch" }
     ],
     csFundamentals: [
+      "Data Structures & Algorithms (200+ Problems)",
       "Object-Oriented Programming (OOP)",
-      "Data Structures and Algorithms (DSA)"
+      "RESTful API & Client-Server Architecture"
     ]
   },
 
   projects: [
+    {
+      id: "chatgpt-clone-groq",
+      title: "ChatGPT Clone (Groq Edition) ⚡",
+      description: "High-fidelity, pixel-perfect copy of ChatGPT powered by Groq LPUs for 300 to 800+ tokens/sec streaming, featuring DeepSeek-R1 reasoning, Whisper voice input, Flux.1 image generation & Firebase sync.",
+      category: "AI & GenAI",
+      tags: ["Next.js (App Router)", "TypeScript", "Groq LPU", "DeepSeek-R1", "Tailwind CSS", "Firebase Firestore", "KaTeX"],
+      github: "https://github.com/Shivraj-jaat",
+      live: "#",
+      image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80",
+      featured: true,
+      highlights: [
+        "Real-time token streaming (300-800+ tps) across LLaMA 3.3, DeepSeek-R1 (collapsible reasoning thoughts), and Vision models",
+        "Voice Chat transcription with Groq Whisper & built-in free Flux.1 high-resolution AI image generation",
+        "KaTeX LaTeX mathematical rendering, code syntax highlighting with one-click copy, and multi-session Firebase sync"
+      ]
+    },
     {
       id: "ai-interview-prep",
       title: "AI Interview Prep Platform",
       description: "Full-stack MERN platform that runs AI-powered mock interviews, dynamically generating questions and evaluating candidate answers via the Gemini API.",
       category: "Full Stack",
       tags: ["MERN Stack", "Gemini API (@google/genai)", "JWT", "Tailwind CSS", "Vercel", "Render"],
-      github: "https://github.com",
+      github: "https://github.com/Shivraj-jaat",
       live: "#",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
       featured: true,
@@ -93,35 +103,35 @@ export const portfolioData = {
       ]
     },
     {
-      id: "movie-explorer",
-      title: "Movie Explorer Website",
-      description: "Responsive multi-page movie discovery application with trending/popular movies, instant search, dynamic movie-ID routing, and rich detail views.",
-      category: "Frontend",
-      tags: ["React.js", "Tailwind CSS", "React Router DOM", "TMDB/OMDb API", "JavaScript"],
-      github: "https://github.com",
-      live: "#",
-      image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80",
-      featured: true,
-      highlights: [
-        "Dynamic movie-ID routing across Home, Listings, Search, Details, and Error pages with React Router DOM",
-        "Integrated TMDB/OMDb APIs with robust loading/error handling and modular reusable components",
-        "Responsive movie discovery UI built with modern Tailwind CSS utility styling"
-      ]
-    },
-    {
       id: "groq-ai-portfolio",
       title: "Groq Fast-Inference AI Portfolio & Hub",
       description: "Production-grade portfolio featuring Aura AI chatbot powered by Groq LPU inference and real-time visitor guestbook using Firebase Firestore.",
       category: "AI & GenAI",
       tags: ["React 19", "Groq API", "Tailwind CSS", "Firebase Firestore", "Vite"],
-      github: "https://github.com",
+      github: "https://github.com/Shivraj-jaat/My-Portfolio",
       live: "#",
       image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
       featured: true,
       highlights: [
-        "Inference speeds up to 300+ tokens/sec using Groq LPU LLaMA 3.3",
+        "Inference speeds up to 300+ tokens/sec using Groq LPU with Qwen & LLaMA",
         "AI Assistant grounded in Shivraj's technical resume, skills, and education",
         "Real-time Firebase Firestore visitor messages and guestbook wall"
+      ]
+    },
+    {
+      id: "movie-explorer",
+      title: "Movie Explorer Website",
+      description: "Responsive multi-page movie discovery application with trending/popular movies, instant search, dynamic movie-ID routing, and rich detail views.",
+      category: "Frontend",
+      tags: ["React.js", "Tailwind CSS", "React Router DOM", "TMDB/OMDb API", "JavaScript"],
+      github: "https://github.com/Shivraj-jaat",
+      live: "#",
+      image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80",
+      featured: false,
+      highlights: [
+        "Dynamic movie-ID routing across Home, Listings, Search, Details, and Error pages with React Router DOM",
+        "Integrated TMDB/OMDb APIs with robust loading/error handling and modular reusable components",
+        "Responsive movie discovery UI built with modern Tailwind CSS utility styling"
       ]
     }
   ],

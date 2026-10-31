@@ -17,17 +17,17 @@ export default function Hero({ onOpenAiChat }) {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
         
         {/* Availability Badge */}
-        <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/60 shadow-inner mb-6 sm:mb-8 backdrop-blur-md">
+        <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/60 shadow-inner mb-6 sm:mb-8 backdrop-blur-md hover:border-slate-600 transition-colors">
           <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-emerald-500"></span>
           </span>
           <span className="text-[11px] sm:text-xs font-medium text-slate-300">
-            Available for Internships & Projects
+            Available for Internships & Full-Stack Roles
           </span>
           <span className="hidden sm:inline-block text-slate-600">|</span>
           <span className="inline-flex items-center gap-1 text-[11px] sm:text-xs text-cyan-400 font-mono">
-            <Flame className="w-3 h-3 text-amber-400 fill-amber-400 shrink-0" /> Groq AI
+            <Flame className="w-3 h-3 text-amber-400 fill-amber-400 shrink-0" /> Groq AI Integrated
           </span>
         </div>
 
@@ -42,24 +42,24 @@ export default function Hero({ onOpenAiChat }) {
           Hi! I am <span className="text-slate-200 font-semibold">{personal.name}</span>, a {personal.title.toLowerCase()}. {personal.tagline}
         </p>
 
-        {/* CTA Buttons */}
+        {/* CTA Buttons with Shimmer & Glow Hover */}
         <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-16 max-w-lg sm:max-w-none mx-auto">
           <a
             href="#projects"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-white bg-blue-600 hover:bg-blue-500 active:scale-[0.98] shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 transition-all cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-white bg-blue-600 hover:bg-blue-500 hover:-translate-y-1 active:scale-[0.98] shadow-lg shadow-blue-600/30 hover:shadow-blue-500/50 transition-all duration-300 cursor-pointer btn-shimmer"
           >
             <span>Explore Projects</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a>
 
           <button
             onClick={onOpenAiChat}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-slate-200 bg-slate-900/90 hover:bg-slate-800/90 active:scale-[0.98] border border-slate-700/80 hover:border-cyan-500/50 shadow-md hover:shadow-cyan-500/10 transition-all cursor-pointer group"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-slate-200 bg-slate-900/90 hover:bg-slate-800/90 hover:-translate-y-1 active:scale-[0.98] border border-slate-700/80 hover:border-cyan-500/50 shadow-md hover:shadow-cyan-500/20 transition-all duration-300 cursor-pointer group btn-shimmer"
           >
-            <Bot className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
+            <Bot className="w-5 h-5 text-cyan-400 group-hover:scale-110 group-hover:rotate-6 transition-transform" />
             <span>Chat with My AI</span>
-            <span className="px-1.5 py-0.5 rounded text-[10px] font-mono bg-cyan-950 text-cyan-300 border border-cyan-800/60">
-              ⚡ Groq
+            <span className="px-1.5 py-0.5 rounded text-[10px] font-mono bg-cyan-950 text-cyan-300 border border-cyan-800/60 shadow-sm">
+              ⚡ Groq LPU
             </span>
           </button>
 
@@ -68,7 +68,7 @@ export default function Hero({ onOpenAiChat }) {
               href={personal.resumeUrl && personal.resumeUrl !== '#' ? personal.resumeUrl : '#about'}
               target={personal.resumeUrl && personal.resumeUrl !== '#' ? '_blank' : '_self'}
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl font-medium text-sm text-slate-300 hover:text-white bg-slate-900/60 hover:bg-slate-800/80 active:scale-[0.98] border border-slate-800 hover:border-slate-700 transition-all cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl font-medium text-sm text-slate-300 hover:text-white bg-slate-900/70 hover:bg-slate-800 hover:-translate-y-0.5 active:scale-[0.98] border border-slate-800 hover:border-slate-700 shadow-sm transition-all duration-200 cursor-pointer"
             >
               <Download className="w-4 h-4 text-slate-400" />
               <span>Resume</span>
@@ -76,7 +76,7 @@ export default function Hero({ onOpenAiChat }) {
 
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl font-medium text-sm text-slate-400 hover:text-white bg-slate-900/40 hover:bg-slate-800/60 active:scale-[0.98] border border-slate-800/60 transition-all cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl font-medium text-sm text-slate-400 hover:text-white bg-slate-900/40 hover:bg-slate-800/80 hover:-translate-y-0.5 active:scale-[0.98] border border-slate-800/60 hover:border-slate-700 transition-all duration-200 cursor-pointer"
             >
               <span>Contact</span>
             </a>
@@ -88,9 +88,9 @@ export default function Hero({ onOpenAiChat }) {
           {stats.map((stat, idx) => (
             <div 
               key={idx}
-              className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm hover:border-slate-700 transition-colors"
+              className="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm hover:border-cyan-500/30 hover:-translate-y-0.5 transition-all duration-200"
             >
-              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent mb-0.5 sm:mb-1">
+              <div className="text-xl sm:text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent mb-0.5 sm:mb-1">
                 {stat.value}
               </div>
               <div className="text-[11px] sm:text-xs md:text-sm text-slate-400 font-medium">
